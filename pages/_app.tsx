@@ -1,5 +1,5 @@
-import "@/styles/globals.css";
-import React from "react"
+import "@/styles/glo bals.css";
+import {useEffect} from "react"
 import Navbar from "@/components/nav";
 import { useRouter } from "next/router";
 import type { AppProps } from "next/app";
@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const route = router.pathname;
 
-  React.useEffect(()=>{
+  useEffect(()=>{
     AOS.init(
       {
         offset: 120,

@@ -1,4 +1,3 @@
-import React from "react";
 import { FaLaptopCode, FaProductHunt } from "react-icons/fa";
 import { GiCyberEye } from "react-icons/gi";
 import { RiCustomerService2Fill } from "react-icons/ri";

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { MdGroups, MdOutlinePersonPin } from "react-icons/md";
 import { HiUserGroup } from "react-icons/hi";
 import { TbUserSearch } from "react-icons/tb";

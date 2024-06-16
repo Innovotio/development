@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { toast } from "react-toastify";
@@ -11,9 +11,9 @@ import Supabase from "@/components/database/supabase";
 
 const Event = () => {
   const router = useRouter();
-  const [loading, setLoading] = React.useState<boolean>(false);
-  const [isEmailValid, setIsEmailValid] = React.useState<boolean>(true);
-  const [form, setForm] = React.useState({
+  const [loading, setLoading] = useState<boolean>(false);
+  const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
+  const [form, setForm] = useState({
     company_name: "",
     country: "",
     first_name: "",

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { aboutFaqProps } from "@/models/declaration";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 

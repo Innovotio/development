@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import microphone from "../../../public/assets/program/microphone.svg";
 import buzz from "../../../public/assets/program/buzz.svg";

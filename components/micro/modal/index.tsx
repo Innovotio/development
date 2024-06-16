@@ -1,10 +1,10 @@
-import React from "react";
+import {useRef, useEffect, forwardRef} from "react";
 import { gsap } from "gsap";
 import { modalProps } from "@/models/declaration";
 
-const Modal = React.forwardRef(
+const Modal = forwardRef(
   ({ children, open, onClose, className }:modalProps) => { 
-    const modalRef = React.useRef(null);
+    const modalRef = useRef(null);
     const animateOpen = () => {
       gsap.to(modalRef.current, {
         duration: 0.3,
@@ -21,7 +21,7 @@ const Modal = React.forwardRef(
       });
     };
 
-    React.useEffect(() => {
+    useEffect(() => {
       if (typeof window !== "undefined") {
         gsap.set(modalRef.current, { scale: 0, opacity: 0 });
         if (open) {
@@ -30,6 +30,7 @@ const Modal = React.forwardRef(
           animateClose();
         }
       }
+      //do not add animateClose or animateOpen in dependency array
     }, [open]);
     return (
       <>

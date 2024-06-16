@@ -1,5 +1,3 @@
-import React from "react";
-
 const Copyright = () => {
   return (
     <section className="pt-10 text-white font-light flex md:flex-row-reverse w-full flex-col md:items-start md:justify-between">

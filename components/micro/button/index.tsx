@@ -1,4 +1,3 @@
-import React from "react";
 import { buttonProps} from "@/models/declaration";
 
 const Button = ({ className, children, onClick, disabled }: buttonProps) => {

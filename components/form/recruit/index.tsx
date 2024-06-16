@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -11,9 +11,9 @@ import formImage from "../../../public/assets/form/Account.svg";
 
 const Recruit = () => {
   const router = useRouter();
-  const [loading, setLoading] = React.useState<boolean>(false);
-  const [isEmailValid, setIsEmailValid] = React.useState<boolean>(true);
-  const [form, setForm] = React.useState({
+  const [loading, setLoading] = useState<boolean>(false);
+  const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
+  const [form, setForm] = useState({
     company_name: "",
     country: "",
     first_name: "",

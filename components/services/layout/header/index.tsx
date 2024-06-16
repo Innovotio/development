@@ -1,5 +1,4 @@
 import Button from "@/components/micro/button";
-import React from "react";
 
 const Header = () => {
   return (

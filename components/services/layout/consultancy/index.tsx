@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Button from "@/components/micro/button";
 import Card from "@/components/micro/services/card";

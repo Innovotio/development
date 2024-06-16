@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import {useState} from "react";
 import Link from "next/link";
 import Logo from "../../public/assets/footer/Logo.svg";
 import mobileLogo from "../../public/assets/navbar/logo.svg";
@@ -11,10 +11,8 @@ import Talent from "./Talent";
 import Business from "./business";
 
 function Navbar() {
-  const [nav, setNav] = React.useState(false);
-  const [background, setBackground] = React.useState("#13181a");
-
-  const [navigation, setNavigation] = React.useState({
+  const [nav, setNav] = useState(false);
+  const [navigation, setNavigation] = useState({
     business: false,
     talent: false,
     about: false,

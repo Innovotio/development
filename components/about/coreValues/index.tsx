@@ -1,4 +1,3 @@
-import React from "react";
 import Innovation from "../../../public/assets/about/innovation.svg";
 import Collaboration from "../../../public/assets/about/collaboration.svg";
 import Education from "../../../public/assets/about/education.svg";

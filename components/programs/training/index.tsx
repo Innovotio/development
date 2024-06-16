@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import one from "../../../public/assets/program/1.svg";
 import six from "../../../public/assets/program/6.svg";
 import three from "../../../public/assets/program/3.svg";
@@ -7,7 +7,7 @@ import creative from "../../../public/assets/program/creative.svg";
 import Button from "@/components/micro/button";
 
 const Training = () => {
-  const [options, setOptions] = React.useState({
+  const [options, setOptions] = useState({
     month: 1,
   });
   const handleOptions = (value: number) => {
