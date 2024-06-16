@@ -1,4 +1,4 @@
-import "@/styles/glo bals.css";
+import "@/styles/globals.css";
 import {useEffect} from "react"
 import Navbar from "@/components/nav";
 import { useRouter } from "next/router";

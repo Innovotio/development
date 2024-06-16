@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import "swiper/css";
 import Image from "next/image";
 import "swiper/css/pagination";
@@ -8,7 +9,6 @@ import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 import Quotation from "../../../public/assets/testimonial/Quote.svg";
 
 const Testimonial = () => {
- 
   const data = [
     {
       name: "Destiny Usiomoifo",
@@ -54,7 +54,7 @@ const Testimonial = () => {
           className="max-w-[100%] lg:max-w-[100%] "
         >
           {data.map((client) => (
-            <SwiperSlide key={client.name} >
+            <SwiperSlide key={client.name}>
               <div className="md:mx-20 mx-14 xl:text-start text-center">
                 <div className="pb-8 flex justify-center xl:justify-normal">
                   <Image alt="quotation mark" src={Quotation} width={60} />
@@ -72,6 +72,7 @@ const Testimonial = () => {
                     </div>
                   </div>
                   <img
+                    alt="client image"
                     src={client.image}
                     className="rounded-full w-72 h-72 xl:block hidden"
                   />

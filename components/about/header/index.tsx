@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const Header = () => {
   return (
     <header className="lg:pt-10">
