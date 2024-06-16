@@ -9,7 +9,7 @@ const Copyright = () => {
         <p className="ml-5">Privacy Policy</p>
       </div>
       <p className="pb-5 md:pb-0 font-light text-sm t md:mt-0 mb-3 mt-3 md:text-base">
-        ©Copyright 2023 Innovotio. All Rights Reserved.
+        ©Copyright {new Date().getFullYear()} Innovotio. All Rights Reserved.
       </p>
     </section>
   );
